@@ -1,0 +1,39 @@
+{
+	"name": "jobtest",
+	"version": "1.0.0",
+	"description": "Job Testing contract",
+	"main": "truffle.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"kovan": "truffle migrate --network kovan --reset",
+		"ropsten": "truffle migrate --network ropsten --reset",
+		"ropstenverify": "truffle run verify TestContract --network ropsten",
+		"mainnet": "truffle migrate --network main --reset",
+		"bsctestnet": "truffle migrate --network bsctestnet --reset",
+		"development": "truffle migrate --network development --reset",
+		"compile": "truffle compile --network bsctestnet",
+		"verify": "truffle run verify TestContract --network main",
+		"test": "npx builder test"
+	},
+	"repository": "https://github.com/Crypto-one-dev",
+	"author": "kan881271@gmail.com",
+	"license": "MIT",
+	"dependencies": {
+		"@openzeppelin/contracts": "^4.6.0",
+		"@openzeppelin/test-helpers": "^0.5.15",
+		"@truffle/hdwallet-provider": "^1.7.0",
+		"chai": "^4.3.4",
+		"dotenv": "^5.0.1",
+		"fs": "0.0.1-security",
+		"truffle": "^5.5.18"
+	},
+	"devDependencies": {
+		"ethers": "^5.6.8",
+		"solidity-coverage": "^0.7.13",
+		"truffle-hdwallet-provider": "^1.0.17",
+		"truffle-plugin-verify": "^0.5.26",
+		"web3": "^1.7.3"
+	}
+}
